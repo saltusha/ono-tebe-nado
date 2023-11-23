@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="header__menu">
+      <nav class="menu">
         <ul class="header__manu-list">
           <li class="menu-item">
             <a href="#0" class="menu-link active-item">главная</a>
@@ -23,32 +24,27 @@
           </li>
         </ul>
       </nav>
-      <a href="" class="header__logo-link">
+      <a class="header__logo-link">
         <img
           src="./images/logo-black.svg"
           width="148"
           height="105"
-          alt=""
+          alt="лого"
           class="header__logo"
         />
       </a>
 
       <address class="header__address address">
-        <div class="address-list">
-          <div class="address-item">
-            <a href="tel:+99995555555" class="contacts-active"
-              >+9 999 555 5555</a
-            >
-          </div>
-          <div class="address-item">
-            <a href="mailto:info@sobaka.ge" class="contacts-active"
-              >info@sobaka.ge</a
-            >
-          </div>
-          <div class="address-item">
-            наб. Принсенграхт 263-265, <br />
-            Амстердам
-          </div>
+        <div class="address-item">
+          <a href="tel:+99995555555" class="contacts-active">+9 999 555 5555</a>
+        </div>
+        <div class="address-item">
+          <a href="mailto:info@sobaka.ge" class="contacts-active"
+            >info@sobaka.ge</a
+          >
+        </div>
+        <div class="address-item">
+          <p class="address-item-text">наб. Принсенграхт 263-265, Амстердам</p>
         </div>
       </address>
     </header>
@@ -65,10 +61,12 @@
           <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
           </p>
-          <button class="cover__description-button">Сделать ставку</button>
+          <button type="button" class="cover__description-button">
+            Сделать ставку
+          </button>
         </div>
       </section>
-      <article class="lots" id="lots">
+      <section class="lots" id="lots">
         <h2 class="lots__title">Лоты</h2>
 
         <ul class="lots__list">
@@ -87,7 +85,7 @@
           <li class="lots__item card_type_book">
             <div class="overlay"></div>
 
-            <a href="" class="lots__card-link">
+            <a href="#0" class="lots__card-link">
               <h3 class="lots__card-title">
                 Книга, где описан один скучный день из жизни рекламного агента
               </h3>
@@ -118,9 +116,9 @@
           </li>
         </ul>
         <a href="" class="lots__link">посмотреть больше</a>
-      </article>
+      </section>
       <section class="about" id="about">
-        <a href="" class="about__logo-link">
+        <a class="about__logo-link">
           <img
             src="./images/logo-white.svg"
             width="148"
@@ -131,7 +129,7 @@
         </a>
 
         <div class="about__info-block">
-          <h4 class="about__info-title">Об аукционе</h4>
+          <h2 class="about__info-title">Об аукционе</h2>
           <div class="about__info-text-block">
             <p class="about__info-text">
               Здесь вы не встретите очередное пафосное собрание невероятно
@@ -154,55 +152,63 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="address">
-        <div class="address-list">
-          <div class="address-item">
-            <a href="tel:+99995555555" class="contacts-active"
-              >+9 999 555 5555</a
-            >
-          </div>
-          <div class="address-item">
-            <a href="mailto:info@sobaka.ge" class="contacts-active"
-              >info@sobaka.ge</a
-            >
-          </div>
-          <div class="address-item">
-            наб. Принсенграхт 263-265, <br />
-            Амстердам
-          </div>
+      <address class="address footer__address">
+        <div class="address-item">
+          <a href="tel:+99995555555" class="contacts-active">+9 999 555 5555</a>
+        </div>
+        <div class="address-item">
+          <a href="mailto:info@sobaka.ge" class="contacts-active"
+            >info@sobaka.ge</a
+          >
+        </div>
+        <div class="address-item">
+          <p class="address-item-text">наб. Принсенграхт 263-265, Амстердам</p>
         </div>
       </address>
-      <ul class="footer__menu-list">
-        <li class="menu-item menu-item">
-          <a href="#0" class="menu-link active-item">главная</a>
-        </li>
-        <li class="menu-item menu-item">
-          <a href="#lots" class="menu-link">посмотреть лоты</a>
-        </li>
-        <li class="menu-item menu-item">
-          <a href="#about" class="menu-link">об аукционе</a>
-        </li>
-      </ul>
+      <nav class="menu">
+        <ul class="footer__menu-list">
+          <li class="menu-item menu-item">
+            <a href="#0" class="menu-link active-item">главная</a>
+          </li>
+          <li class="menu-item menu-item">
+            <a href="#lots" class="menu-link">посмотреть лоты</a>
+          </li>
+          <li class="menu-item menu-item">
+            <a href="#about" class="menu-link">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
 
       <ul class="footer__img-list">
         <li class="footer__img-item">
-          <img
-            src="./images/yt.svg"
-            height="48"
-            alt="ютуб"
-            class="footer__img"
-          />
+          <a href="#0" class="footer__img-link">
+            <img
+              src="./images/yt.svg"
+              height="48"
+              alt="ютуб"
+              class="footer__img"
+            />
+          </a>
         </li>
         <li class="footer__img-item">
-          <img src="./images/vk.svg" height="48" alt="вк" class="footer__img" />
+          <a href="#0" class="footer__img-link">
+            <img
+              src="./images/vk.svg"
+              height="48"
+              alt="вк"
+              class="footer__img"
+            />
+          </a>
         </li>
         <li class="footer__img-item">
-          <img
-            src="./images/pinterest.svg"
-            height="48"
-            alt="пинетерс"
-            class="footer__img"
-          />
+          <a href="#0" class="footer__img-link">
+            <img
+              src="./images/pinterest.svg"
+              height="48"
+              alt="пинетерс"
+              class="footer__img"
+            />
+          </a>
         </li>
       </ul>
     </footer>
