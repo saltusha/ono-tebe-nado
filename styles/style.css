@@ -25,7 +25,7 @@
   font-weight: 400;
   line-height: 1.35;
 }
-.address-item-text{
+.address-item-text {
   width: 240px;
 }
 
@@ -59,7 +59,6 @@
   align-items: center;
 }
 
-
 .header__manu-list {
   display: flex;
   gap: 32px;
@@ -76,10 +75,9 @@
   flex: 1;
 }
 
-.header__address{
+.header__address {
   justify-content: end;
 }
-
 
 .cover {
   padding: 165px 50px 50px;
@@ -99,10 +97,15 @@
   line-height: 115%;
   letter-spacing: 30px;
   text-transform: uppercase;
+  letter-spacing: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .cover__span {
   display: block;
+  letter-spacing: 40px;
 }
 
 .span-center {
@@ -128,7 +131,7 @@
 }
 
 .cover__description-text {
-  word-spacing: 20px;
+  word-spacing: 19px;
 }
 .cover__description-button {
   color: #fff;
@@ -265,8 +268,8 @@
   justify-content: space-between;
 }
 
-.footer__address{
-justify-self: start;
+.footer__address {
+  justify-self: start;
 }
 
 .footer__menu-list {
