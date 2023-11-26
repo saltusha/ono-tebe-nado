@@ -105,14 +105,21 @@
 
 .cover__span {
   display: block;
-  letter-spacing: 40px;
+  letter-spacing: 0.4em;
+  line-height: 1.1em;
 }
 
 .span-center {
   text-align: center;
+  margin-left: -33px;
+  letter-spacing: 0.34em;
+  
 }
 .span-right {
   text-align: right;
+  letter-spacing: 0.4em;
+  margin-right: -63px;
+  line-height: 93% ;
 }
 
 .cover__description {
