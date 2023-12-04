@@ -95,7 +95,6 @@
   font-size: 100px;
   font-weight: 700;
   line-height: 115%;
-  letter-spacing: 30px;
   text-transform: uppercase;
   letter-spacing: 30px;
   display: flex;
@@ -105,21 +104,47 @@
 
 .cover__span {
   display: block;
-  letter-spacing: 0.4em;
-  line-height: 1.1em;
+  letter-spacing: 0.33em;
+}
+
+.cover__special {
+  letter-spacing: 0.3em;
+  position: relative;
+  right: 29px;
 }
 
 .span-center {
+  line-height: 100%;
   text-align: center;
-  margin-left: -33px;
-  letter-spacing: 0.34em;
-  
+  letter-spacing: 0.28em;
 }
+.span-center__special {
+  position: relative;
+  right: 14px;
+  letter-spacing: 0.28em;
+}
+
 .span-right {
   text-align: right;
-  letter-spacing: 0.4em;
-  margin-right: -63px;
-  line-height: 93% ;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+}
+
+.span-right__special {
+  position: relative;
+  left: 27px;
+}
+.span-right__special-second {
+  position: relative;
+  left: 48px;
+}
+.span-right__special-third {
+  position: relative;
+  left: 37px;
+}
+.span-right__special-four {
+  position: relative;
+  left: 25px;
 }
 
 .cover__description {
@@ -138,8 +163,12 @@
 }
 
 .cover__description-text {
+  position: relative;
+  bottom: 5px;
+  left: 10px;
   word-spacing: 19px;
 }
+
 .cover__description-button {
   color: #fff;
   margin: 0;
@@ -153,6 +182,9 @@
   cursor: pointer;
   color: #fff;
   text-transform: uppercase;
+  position: relative;
+  bottom: 7px;
+  left: 13px;
 }
 
 .lots {
